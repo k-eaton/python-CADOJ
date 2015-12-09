@@ -1,0 +1,12 @@
+Solution Design
+
+1: Import the data from the CA_DOJ website.
+2: Create a class (called Graph) that contains all the data necessary for the graph:
+	A: the column you want to pull data from,
+	B: the specific topic within that column that you want to look at,
+	C: the column you want to compare it to,
+	D: and the title of the graph.
+	E: The class will also need to contain a function that takes the topic from the first column and compares it to the contents of the second column, and returns a bar graph.
+3: Create a function outside the class using easygui that allows a person to select the columns and topics they wish to compare.
+4: Create another function that cycles through a list of instances of the class Graph, processes each one, and prints the results to a pdf file.
+5: See Class_Diagrams.png

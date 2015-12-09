@@ -1,0 +1,5 @@
+Problem/Idea Definition
+
+The CA Department of Justice has released 30 years of data about the deaths of people in custody.  I would like to wrangle some meaning out of that data by allowing people to create simple graphs that can be tailored to give you what comparisons you are interested in.  The graphs would then be delivered in the form of a multi page pdf. (One graph per page.)  Each graph is an instance of the class Graph.
+
+The project will involve the libraries pandas, matplotlib, and easygui.

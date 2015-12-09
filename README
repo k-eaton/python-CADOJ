@@ -1,0 +1,23 @@
+Welcome to the California Department of Justice Graph Generator!  
+
+In the interest of full disclosure:
+
+- This program is not affiliated with the CA DOJ.  It just makes use of their publicly available data on deaths of inmates in the CA justice system, from 1980 - 2013.
+- The data file included in this zip file has been altered from the original.  There were multiple duplicated columns, as well as columns containing codes that are of use only to the agencies involved.  I removed these in the name of expediting the loading process.  (It literally cut the file size in half.)  For the original, unaltered csv file, please see http://openjustice.doj.ca.gov/data.
+
+Installation
+------------
+
+This program makes use of 3 external libraries: pandas, matplotlib, and easygui
+
+The easiest way to run this program is to install Anaconda with Python 2.7, found at https://www.continuum.io/downloads.  This can be set to install to a local folder that can be deleted for easy removal when you're done.  This will install the correct version of Python (2.7.10), and the libraries pandas and matplotlib, as well as any dependencies they have.  You can then install easygui by either installing via pip or manually.  Use "pip install easygui" if using pip.  Please see http://sourceforge.net/projects/easygui/ to install manually.
+
+If you choose not to use Anaconda, the necessary libraries are:
+
+- pandas: http://pandas.pydata.org/pandas-docs/stable/install.html 
+- matplotlib: http://matplotlib.org/users/installing.html
+- easygui: "pip install easygui" -or- http://sourceforge.net/projects/easygui/
+
+Once the libraries are installed, the program can be run either in IDLE or by typing "python graph.py" in the command line.  (You must be in the same folder as the graph.py file.)  A popup box will appear (though it may be hidden under other open windows).  PDFs will be saved in the same folder as graph.py.
+
+This program was created on a Mac running OS X Yosemite (Version 10.10.5), using Anaconda, and Python 2.7.10 which came with Anaconda.  Easygui was installed via "pip install easygui".  If you have any problems, questions or concerns, please contact me at katrina.eaton@gmail.com.
