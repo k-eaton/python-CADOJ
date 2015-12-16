@@ -80,7 +80,23 @@ def repeat_making_a_graph(pdf_file):
 
 
 #Make the PDF.
-def make_a_pdf():
+def make_a_pdf(pdf_title):
+
+    #Create your PDF
+    pp = PdfPages(pdf_title + '.pdf')
+    
+    #Make a graph
+    graph_variables().create_graph()
+    
+    #Save that graph to the PDF
+    plt.savefig(pp, format='pdf')
+
+    #Repeat ad nauseum
+    while repeat_making_a_graph(pp) != False:
+        if repeat_making_a_graph(pp) == False:
+            break    
+
+def start_the_process():
 
     #name your PDF
     pdf_title = enterbox("What would you like to name your pdf save file? \n (The file extension will be added for you.)",
@@ -92,25 +108,31 @@ def make_a_pdf():
         
     #still trying to fail gracefully
     elif pdf_title == "":
-        msgbox("PDF not saved. Thank you for your interest.", title)
+        pdf_title = enterbox("You must enter a file name. \nWhat would you like to name your pdf save file? \n (The file extension will be added for you.)",
+                             title)
+        make_a_pdf(pdf_title)
+        #msgbox("PDF not saved. \nYou must supply a file name. \nThank you for your interest.", title)
         
     #let's run with this puppy!
     #(Easygui returns input as a string For Your Protection)
     else:
-        #Create your PDF
-        pp = PdfPages(pdf_title + '.pdf')
-        
-        #Make a graph
-        graph_variables().create_graph()
-        
-        #Save that graph to the PDF
-        plt.savefig(pp, format='pdf')
 
-        #Repeat ad nauseum
-        while repeat_making_a_graph(pp) != False:
-            if repeat_making_a_graph(pp) == False:
-                break
+        make_a_pdf(pdf_title)
+
+        # #Create your PDF
+        # pp = PdfPages(pdf_title + '.pdf')
+        
+        # #Make a graph
+        # graph_variables().create_graph()
+        
+        # #Save that graph to the PDF
+        # plt.savefig(pp, format='pdf')
+
+        # #Repeat ad nauseum
+        # while repeat_making_a_graph(pp) != False:
+        #     if repeat_making_a_graph(pp) == False:
+        #         break
             
-make_a_pdf()
 
 
+start_the_process()
