@@ -78,7 +78,7 @@ def graph_variables():
                                   column_1_variable,
                                   column_2,
                                   graph_title)
-                return graph
+                    return graph
 
 #how many graphs would you like to make?
 def repeat_making_a_graph(pdf_file):
@@ -128,10 +128,8 @@ def start_the_process():
         pdf_title = enterbox("You must enter a file name. \nWhat would you like to name your pdf save file? \n(The file extension will be added for you.)",
                              title)
         make_a_pdf(pdf_title)
-        #msgbox("PDF not saved. \nYou must supply a file name. \nThank you for your interest.", title)
         
     #let's run with this puppy!
-    #(Easygui returns input as a string For Your Protection)
     else:
         make_a_pdf(pdf_title)
 
