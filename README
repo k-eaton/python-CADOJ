@@ -2,7 +2,7 @@ Welcome to the California Department of Justice Graph Generator!
 
 In the interest of full disclosure:
 
-- This program is not affiliated with the CA DOJ.  It just makes use of their publicly available data on deaths of inmates in the CA justice system, from 1980 - 2013.
+- This program is not affiliated with the CA DOJ.  It just makes use of their publicly available data on deaths of inmates in the CA justice system, from 1980 - 2014.
 - The data file included in this zip file has been altered from the original.  There were multiple duplicated columns, as well as columns containing codes that are of use only to the agencies involved.  I removed these in the name of expediting the loading process.  (It literally cut the file size in half.)  For the original, unaltered csv file, please see http://openjustice.doj.ca.gov/data.
 
 Installation
