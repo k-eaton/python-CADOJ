@@ -78,7 +78,7 @@ class PDF():
 	        
 	    #still trying to fail gracefully
 		elif self.pdf_title == "":
-			pdf_title = enterbox("You must enter a file name. \nWhat would you like to name your pdf save file? \n(The file extension will be added for you.)",
+			self.pdf_title = enterbox("You must enter a file name. \nWhat would you like to name your pdf save file? \n(The file extension will be added for you.)",
 	                             title)
 			self.make_a_pdf(self.pdf_title)
 	        
