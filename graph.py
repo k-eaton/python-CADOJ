@@ -60,7 +60,7 @@ class Graph():
         #Tarting up the graph for legibility
         plt.gcf().subplots_adjust(bottom=0.6)
         plt.ylabel(self.column_1_variable)
-        plt.xlabel(self.graph_title)
+        plt.title(self.graph_title)
 
 
 class PDF():
